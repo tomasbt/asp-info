@@ -1,0 +1,44 @@
+html, body { height: 100%; padding: 0; margin: 0; }
+
+div { width: 50%; height: 50%; float: left; }
+
+#købmand-news { 
+    background: rgb(200, 200, 200);
+    border-radius: 15px; 
+    height: 68%; 
+    width: 49.25%; 
+    margin: 0.5%;
+    margin-right: 0.25%;
+    margin-bottom: 0.25%;
+}
+
+#lokale-news { 
+    background: rgb(200, 200, 200);
+    border-radius: 15px; 
+    height: 68%; 
+    width: 49.25%; 
+    margin: 0.5%; 
+    margin-left: 0.25%;
+    margin-bottom: 0.25%;
+}
+
+#vejret { 
+    background: rgb(255, 255, 255);
+    border-radius: 15px; 
+    height: 29%; 
+    width: 30%; 
+    margin: 0.5%; 
+    margin-top: 0.25%; 
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 0.5%; */
+}
+
+#sponsor { 
+    background: rgb(200, 200, 200);
+    border-radius: 15px; 
+    height: 29%; 
+    width: 68%; 
+    margin: 0.5%; 
+    margin-top: 0.25%; 
+}
