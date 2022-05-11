@@ -4,6 +4,7 @@ div { width: 50%; height: 50%; float: left; }
 
 #købmand-news { 
     background: rgb(200, 200, 200);
+    background: rgb(255, 255, 255);
     border-radius: 15px; 
     height: 68%; 
     width: 49.25%; 
@@ -14,6 +15,7 @@ div { width: 50%; height: 50%; float: left; }
 
 #lokale-news { 
     background: rgb(200, 200, 200);
+    background: rgb(255, 255, 255);
     border-radius: 15px; 
     height: 68%; 
     width: 49.25%; 
@@ -23,22 +25,42 @@ div { width: 50%; height: 50%; float: left; }
 }
 
 #vejret { 
+    background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
     border-radius: 15px; 
     height: 29%; 
-    width: 30%; 
+    width: 49.25%; 
+    /* width: 30%;  */
     margin: 0.5%; 
+    margin-right: 0.25%;
     margin-top: 0.25%; 
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     /* margin-bottom: 0.5%; */
 }
 
 #sponsor { 
     background: rgb(200, 200, 200);
+    background: rgb(255, 255, 255);
     border-radius: 15px; 
     height: 29%; 
-    width: 68%; 
+    width: 49.25%; 
+    /* width: 68%;  */
     margin: 0.5%; 
+    margin-left: 0.25%;
     margin-top: 0.25%; 
 }
+
+/* 
+#sponsorImg {
+    animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+  0%   {left:0px; top:0px;}
+  100% {right:0px; top:0px;}
+} */
+
+

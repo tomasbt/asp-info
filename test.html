@@ -5,6 +5,41 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
             crossorigin="anonymous"></script>
+
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("koeb_img").src = images[x];
+            y = (y === images_2.length - 1) ? 0 : y + 1; 
+            document.getElementById("lokale_img").src = images_2[y];
+            z = (z === images_2.length - 1) ? 0 : z + 1; 
+            document.getElementById("sponsor_img").src = images_3[z];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 10000);
+        }
+        
+        var images = [], x = -1;
+        images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/f1d61fac-fd68-4bfb-bc96-c8569f040f5a.jpg";
+        images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/e6be2549-85ee-4327-abde-847afbf82eb9.jpg";
+        images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/5b0a47b6-560d-4b2c-a573-e70723a57424.jpg";
+        images[3] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/bc80fb48-5641-403a-a45a-962033de911f.jpg";
+        images[4] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/68ce9eb2-073e-41a6-bc5a-e322f8437b8e.jpg";
+
+        var images_2 = [], y = -1;
+        images_2[0] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/279231361_10228821469745274_7404898551751702651_n.jpg?_nc_cat=109&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=iV1JQJByCKYAX_0yTuf&_nc_ht=scontent-cph2-1.xx&oh=00_AT_Uz4FMMJH3fucy0aN0l8vG4Id_SJXVS0lr-FcjY0A3DA&oe=62804961";
+        images_2[1] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/280286461_10228214068480347_6299820860392985158_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=I2NlB6a6zlwAX-taBN5&_nc_ht=scontent-cph2-1.xx&oh=00_AT-z-beXhsxuv-ETBmE7KVuzxQELiwKwpVOQJHFlzjXH9g&oe=628088CF";
+        images_2[2] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/280127159_10228191467835345_5559439897293628596_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=ja5bbLG2RUwAX9ZPNLr&_nc_ht=scontent-cph2-1.xx&oh=00_AT-xWdWBt1MVioq6NuiYVelqAaFsRGTHh4ZIPRjHxXe-7g&oe=6280549D";
+        
+        var images_3 = [], z = -1;
+        images_3[0] = "sponsor/spon1.jpg";
+        images_3[1] = "sponsor/spon2.jpg";
+        images_3[2] = "sponsor/spon3.jpg";
+        
+        startTimer();
+        
+    </script>   
 </head>
 
 <style>
@@ -13,28 +48,23 @@
 <body>
 
 <div id="købmand-news">
-        <!-- <img src="20190108_203457.jpg" alt="Italian Trulli" style="width: 100%"> -->
-        <!-- <object type="text/html" data="www.google.com" style="overflow:auto;border:5px ridge blue"> -->
-        <!-- </object> -->
-        <iframe src="https://raw.githubusercontent.com/tomasbt/asp-info/main/test.html?token=GHSAT0AAAAAABT2Q2ZU562RE7NHA3BR4Y2WYTCWXSA"></iframe>
+    <img id="koeb_img" src="https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
 <div id="lokale-news">
-    <!-- <object type="text/html" data="http://validator.w3.org/" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"> -->
-    <!-- </object> -->
+    <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
 
 <hr>
 
 <div id="vejret">
-    <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%;">
+    <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
 
 <div id="sponsor">
-<img src="20190108_203457.jpg" height="100%">
-
+    <img id="sponsor_img" src="sponsor/spon3.jpg" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
 </body>
