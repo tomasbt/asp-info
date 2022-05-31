@@ -1,34 +1,57 @@
-html, body { height: 100%; padding: 0; margin: 0; }
+html, body { height: 100%; padding: 0; margin: 0; overflow: hidden;}
 
 div { width: 50%; height: 50%; float: left; }
+
+#tid_dato { 
+    /* background: rgb(200, 200, 200); */
+    background: rgb(255, 255, 255);
+    /* border-radius: 15px;  */
+    height: 4%; 
+    width: 99%; 
+    margin: 0.5%;
+    /* margin-right: 0.25%; */
+    margin-bottom: 0.25%;
+    margin-top: 0.5%;
+    text-align: center;
+    font-size: 300%;
+    font-family: Tahoma, sans-serif;
+    text-transform: capitalize;
+}
 
 #købmand-news { 
     background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
-    border-radius: 15px; 
-    height: 68%; 
+    /* border-radius: 15px;  */
+    height: 63%; 
     width: 49.25%; 
     margin: 0.5%;
     margin-right: 0.25%;
+    margin-top: 0.25%; 
     margin-bottom: 0.25%;
 }
 
 #lokale-news { 
     background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
-    border-radius: 15px; 
-    height: 68%; 
+    /* border-radius: 15px;  */
+    height: 63%; 
     width: 49.25%; 
     margin: 0.5%; 
     margin-left: 0.25%;
+    margin-top: 0.25%; 
     margin-bottom: 0.25%;
+}
+
+#empty {
+    height: 10%; 
+    width: 100%;
 }
 
 #vejret { 
     background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
-    border-radius: 15px; 
-    height: 29%; 
+    /* border-radius: 15px;  */
+    height: 20%; 
     width: 49.25%; 
     /* width: 30%;  */
     margin: 0.5%; 
@@ -40,10 +63,10 @@ div { width: 50%; height: 50%; float: left; }
 }
 
 #sponsor { 
-    background: rgb(200, 200, 200);
+    /* background: rgb(200, 200, 200); */
     background: rgb(255, 255, 255);
-    border-radius: 15px; 
-    height: 29%; 
+    /* border-radius: 15px;  */
+    height: 25%; 
     width: 49.25%; 
     /* width: 68%;  */
     margin: 0.5%; 

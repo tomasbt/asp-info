@@ -21,31 +21,58 @@
         }
         
         var images = [], x = -1;
-        images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/f1d61fac-fd68-4bfb-bc96-c8569f040f5a.jpg";
-        images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/e6be2549-85ee-4327-abde-847afbf82eb9.jpg";
-        images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/5b0a47b6-560d-4b2c-a573-e70723a57424.jpg";
-        images[3] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/bc80fb48-5641-403a-a45a-962033de911f.jpg";
-        images[4] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/68ce9eb2-073e-41a6-bc5a-e322f8437b8e.jpg";
+        images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/d4f48c9e-41f6-4d4e-8efd-c00903b671a9.jpg";
+        images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/fba89e86-1b3d-4d70-8d99-09cac45d8794.jpg";
+        images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/dbb7a935-2882-460d-9eaf-348f883ce2bf.jpg";
+        images[3] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/d5f46b11-1f0a-467c-9c13-d7b70dd427a7.jpg";
+        images[4] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/a94a42e2-1590-4da5-8c37-e641dafff3cb.jpg";
+        images[4] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/4/a94a42e2-1590-4da5-8c37-e641dafff3cb.jpg";
 
         var images_2 = [], y = -1;
-        images_2[0] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/279231361_10228821469745274_7404898551751702651_n.jpg?_nc_cat=109&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=iV1JQJByCKYAX_0yTuf&_nc_ht=scontent-cph2-1.xx&oh=00_AT_Uz4FMMJH3fucy0aN0l8vG4Id_SJXVS0lr-FcjY0A3DA&oe=62804961";
-        images_2[1] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/280286461_10228214068480347_6299820860392985158_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=I2NlB6a6zlwAX-taBN5&_nc_ht=scontent-cph2-1.xx&oh=00_AT-z-beXhsxuv-ETBmE7KVuzxQELiwKwpVOQJHFlzjXH9g&oe=628088CF";
-        images_2[2] = "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/280127159_10228191467835345_5559439897293628596_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=5cd70e&_nc_ohc=ja5bbLG2RUwAX9ZPNLr&_nc_ht=scontent-cph2-1.xx&oh=00_AT-xWdWBt1MVioq6NuiYVelqAaFsRGTHh4ZIPRjHxXe-7g&oe=6280549D";
+        images_2[0] = "lokal-info/281878228_10228293305621226_395412186670615610_n.jpg";
+        images_2[1] = "lokal-info/283301350_5858359760857963_7442195802936160868_n.jpg";
+        images_2[2] = "lokal-info/283728602_1052751355357892_50071236889360373_n.png";
         
         var images_3 = [], z = -1;
-        images_3[0] = "sponsor/spon1.jpg";
-        images_3[1] = "sponsor/spon2.jpg";
-        images_3[2] = "sponsor/spon3.jpg";
-        
+        images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
+        images_3[1] = "sponsor/0156f57771a64063be54deabbfa006b6.png";
+        images_3[2] = "sponsor/a280002b28bb4c658e6b859f6ac7f517.png";
+        images_3[3] = "sponsor/ce701d839d404919bc469a5eb50247ba.png";
+        images_3[4] = "sponsor/cefdee3141b147fca965c01b2c9adea6.png";
+        images_3[5] = "sponsor/f1fddc92ca834a71af96fbea03eb14d7.png";
+
         startTimer();
-        
+
     </script>   
+
+
+    <script>
+        function updateTime(params) {
+            var dt = new Date();
+            let options_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}; 
+            let options_time = { hour: 'numeric', minute: 'numeric', second: 'numeric'};
+            document.getElementById("tid").innerHTML = dt.toLocaleString("da-DK", options_time);
+            document.getElementById("dato").innerHTML = dt.toLocaleString("da-DK", options_date);
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+    <!-- <meta http-equiv="refresh" content="5">   -->
 </head>
 
-<style>
+<!-- <style>
     table, td {text-align: center; border:1px solid black;}
-</style>
+</style> -->
 <body>
+
+<div id="tid_dato">
+    <span id="tid"></span>  -  <span id="dato"></span>
+</div>
 
 <div id="købmand-news">
     <img id="koeb_img" src="https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png" style="height: 100%; width: 100%; object-fit: contain">
@@ -57,14 +84,19 @@
 
 
 <hr>
-
 <div id="vejret">
-    <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain">
+
+    </br>
+    </br>
+    </br>
+    <!-- <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain"> -->
+    <!-- <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="original" >ASP Vejr</a> -->
+    <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="pure">ASP Vejr</a>
 </div>
 
 
 <div id="sponsor">
-    <img id="sponsor_img" src="sponsor/spon3.jpg" style="height: 100%; width: 100%; object-fit: contain">
+    <img id="sponsor_img" src="sponsor/f1fddc92ca834a71af96fbea03eb14d7.png" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
 </body>
