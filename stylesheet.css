@@ -57,8 +57,12 @@ div { width: 50%; height: 50%; float: left; }
     margin: 0.5%; 
     margin-right: 0.25%;
     margin-top: 0.25%; 
-    /* display: flex;
-    justify-content: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 150%;
+    font-family: Tahoma, sans-serif;
+    text-transform: capitalize;
     /* margin-bottom: 0.5%; */
 }
 
