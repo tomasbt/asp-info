@@ -2,6 +2,18 @@ html, body { height: 100%; padding: 0; margin: 0; overflow: hidden;}
 
 div { width: 50%; height: 50%; float: left; }
 
+#left-side {
+    background: rgb(200, 200, 200);
+    background: rgb(255, 255, 255);
+    /* border-radius: 15px;  */
+    height: 99.5%; 
+    width: 49.25%; 
+    margin: 0.5%;
+    margin-right: 0.25%;
+    margin-top: 0.25%; 
+    margin-bottom: 0.25%;
+}
+
 #tid_dato { 
     /* background: rgb(200, 200, 200); */
     background: rgb(255, 255, 255);
@@ -23,7 +35,7 @@ div { width: 50%; height: 50%; float: left; }
     background: rgb(255, 255, 255);
     /* border-radius: 15px;  */
     height: 63%; 
-    width: 49.25%; 
+    width: 100%; 
     margin: 0.5%;
     margin-right: 0.25%;
     margin-top: 0.25%; 
@@ -34,7 +46,7 @@ div { width: 50%; height: 50%; float: left; }
     background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
     /* border-radius: 15px;  */
-    height: 63%; 
+    height: 99.5%; 
     width: 49.25%; 
     margin: 0.5%; 
     margin-left: 0.25%;
@@ -47,11 +59,23 @@ div { width: 50%; height: 50%; float: left; }
     width: 100%;
 }
 
+#left-bottom { 
+    background: rgb(200, 200, 200);
+    background: white;
+    /* border-radius: 15px;  */
+    height: 36%; 
+    width: 100%; 
+    /* width: 68%;  */
+    margin: 0.5%; 
+    margin-left: 0.25%;
+    margin-top: 0.25%; 
+}
+
 #vejret { 
     background: rgb(200, 200, 200);
     background: rgb(255, 255, 255);
     /* border-radius: 15px;  */
-    height: 20%; 
+    height: 90%; 
     width: 49.25%; 
     /* width: 30%;  */
     margin: 0.5%; 
@@ -68,9 +92,9 @@ div { width: 50%; height: 50%; float: left; }
 
 #sponsor { 
     /* background: rgb(200, 200, 200); */
-    background: rgb(255, 255, 255);
+    background: white;
     /* border-radius: 15px;  */
-    height: 25%; 
+    height: 90%; 
     width: 49.25%; 
     /* width: 68%;  */
     margin: 0.5%; 

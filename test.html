@@ -36,7 +36,7 @@
         // images_2[1] = "lokal-info/Aktiv tirsdag.png";
         images_2[1] = "lokal-info/maarhunde.PNG";
         images_2[2] = "lokal-info/asp_plejecenter_kalender.PNG";
-        // images_2[3] = "lokal-info/FB_IMG_1666362378696.jpg";
+        images_2[3] = "lokal-info/julemarked.PNG";
         // images_2[0] = "http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg";
         // images_2[1] = "http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg";
         
@@ -83,27 +83,35 @@
     <span id="tid"></span>  -  <span id="dato"></span>
 </div> -->
 
-<div id="købmand-news">
-    <img id="koeb_img" src="https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png" style="height: 100%; width: 100%; object-fit: contain">
+<div id="left-side">
+
+    <div id="købmand-news">
+        <img id="koeb_img" src="https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png" style="height: 100%; width: 100%; object-fit: contain">
+    </div>
+
+    <div id="left-bottom">
+        <center><span id="tid"></span>  -  <span id="dato"></span></center>
+        <div id="vejret">
+            
+            <!-- <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain"> -->
+            <!-- <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="original" >ASP Vejr</a> -->
+            <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="pure">ASP Vejr</a>
+        </div>
+        
+        
+        <div id="sponsor">
+            <img id="sponsor_img" src="sponsor/f1fddc92ca834a71af96fbea03eb14d7.png" style="height: 100%; width: 100%; object-fit: contain">
+        </div>
+    </div>
+    
+
 </div>
 
 <div id="lokale-news">
     <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain">
 </div>
 
-
-<hr>
-<div id="vejret">
-    <center><span id="tid"></span>  -  <span id="dato"></span></center>
-    <!-- <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain"> -->
-    <!-- <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="original" >ASP Vejr</a> -->
-    <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="pure">ASP Vejr</a>
-</div>
-
-
-<div id="sponsor">
-    <img id="sponsor_img" src="sponsor/f1fddc92ca834a71af96fbea03eb14d7.png" style="height: 100%; width: 100%; object-fit: contain">
-</div>
+<!-- <hr> -->
 
 </body>
 </html>
