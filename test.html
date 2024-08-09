@@ -29,11 +29,15 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-08-10");
+        nye_tilbud = new Date("2024-08-17");
+        month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/ffe41797-5046-4f51-9eae-8a07a83f5fdd.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/a726ce5c-6f75-44f1-ba56-3718e41feb6e.jpg";
-            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/d3ca2ceb-c67d-4203-b13d-9e3b954e6a57.gif";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7bf94aec-8e4a-4923-9ea9-e8dce3f802b4.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4944d2e5-d5b8-44c4-a743-22ef154fd09d.jpg";
+        }
+
+        if (current_time.getTime() < month_tilbud.getTime()){
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4ad8248d-d834-4a36-a3f9-fb38c032d9dc.jpg");
         } 
         
         var images_2 = [], y = -1;
