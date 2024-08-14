@@ -41,9 +41,27 @@
         } 
         
         var images_2 = [], y = -1;
-        images_2.push("lokal-info/cykelsponsorrally2024.jpg");
-        images_2.push("lokal-info/cykelsponsorrally2024.jpg");
+        cykel_sponsor = new Date("2024-08-26");
+        if (current_time.getTime() < cykel_sponsor.getTime()){
+            images_2.push("lokal-info/cykelsponsorrally2024.jpg");
+        }
+        cykel_sponsor_ekstra = new Date("2024-08-20");
+        if (current_time.getTime() > cykel_sponsor_ekstra.getTime() && current_time.getTime() < cykel_sponsor.getTime()){
+            images_2.push("lokal-info/0cykelsponsorrally2024.jpg");
+            images_2.push("lokal-info/1cykelsponsorrally2024.jpg");
+            images_2.push("lokal-info/2cykelsponsorrally2024.jpg");
+        }
+        halm_kirke = new Date("2024-09-23");
+        if (current_time.getTime() < halm_kirke.getTime()){
+            images_2.push("lokal-info/453704518_1044916956979260_7641458348185109858_n.jpg");
+        }
+        gadeteater = new Date("2024-08-20");
+        if (current_time.getTime() < gadeteater.getTime()){
+            images_2.push("lokal-info/gadeteater.jpg");
+        }
 
+
+        
         // images_2[4] = "lokal-info/julefrokost2023.png";
         // images_2[2] = "lokal-info/Senior fitness.png";
 
