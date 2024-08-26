@@ -23,18 +23,17 @@
         
         var images = [], x = -1;
         images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png";
-        images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png";
        
         // mdr
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-08-24");
+        nye_tilbud = new Date("2024-08-31");
         month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/47a8237a-e7c1-4498-a4cc-4ff3c598a7c6.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/0e28fb3f-5b4b-4ab7-97ff-b647ee018bb0.jpg";
-            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c8e72edf-824b-46bd-8a4b-9c72d20ad827.jpg";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c89a63b6-4498-44c3-97aa-7311b3146eb8.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/6a4769bd-327d-49b8-8c63-03edc9651c01.jpg";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/a2f1d645-31ee-46d2-8d38-ceae8e2a1164.jpg";
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -42,28 +41,19 @@
         } 
         
         var images_2 = [], y = -1;
-        cykel_sponsor = new Date("2024-08-26");
-        if (current_time.getTime() < cykel_sponsor.getTime()){
-            images_2.push("lokal-info/cykelsponsorrally2024.jpg");
-        }
-        cykel_sponsor_ekstra = new Date("2024-08-20");
-        if (current_time.getTime() > cykel_sponsor_ekstra.getTime() && current_time.getTime() < cykel_sponsor.getTime()){
-            images_2.push("lokal-info/0cykelsponsorrally2024.jpg");
-            images_2.push("lokal-info/1cykelsponsorrally2024.jpg");
-            images_2.push("lokal-info/2cykelsponsorrally2024.jpg");
-        }
         halm_kirke = new Date("2024-09-23");
         if (current_time.getTime() < halm_kirke.getTime()){
             images_2.push("lokal-info/453704518_1044916956979260_7641458348185109858_n.jpg");
-        }
-        gadeteater = new Date("2024-08-20");
-        if (current_time.getTime() < gadeteater.getTime()){
-            images_2.push("lokal-info/gadeteater.jpg");
         }
         spejder = new Date("2024-09-22");
         if (current_time.getTime() < spejder.getTime()){
             images_2.push("lokal-info/Uden titel.jpg");
         }
+        vildtaften = new Date("2024-09-30");
+        if (current_time.getTime() < vildtaften.getTime()){
+            images_2.push("lokal-info/vildtaften.jpg");
+        }
+        
 
 
         
