@@ -28,12 +28,13 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-09-07");
+        nye_tilbud = new Date("2024-09-21");
         month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/3224be0d-7e01-4d1a-acbf-08c6038690ad.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/39a90dde-4f60-4d7e-9b5d-456d9c8534c7.jpg";
-            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/370fa3a7-8731-4534-ae31-0434a14ea046.jpg";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/83e8e308-ebbe-48a3-b4ba-957f4c548f87.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/f48264b7-1ff4-478e-ba28-4b3e5cea0f40.jpg";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/cf9f2398-6284-4a74-befb-ff6a5486aee9.jpg";
+            images[3] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4348053d-e8a8-4444-9c1c-4bb3686f8349.jpg";
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -57,10 +58,12 @@
         if (current_time.getTime() < Seniorfitness.getTime()){
             images_2.push("lokal-info/Seniorfitness.png");
         }
-        
+        Kreativaften = new Date("2024-09-17");
+        if (current_time.getTime() < Kreativaften.getTime()){
+            images_2.push("lokal-info/Kreativaften.png");
+        }
 
-        
-        
+               
         // images_2[4] = "lokal-info/julefrokost2023.png";
         // images_2[2] = "lokal-info/Senior fitness.png";
 
