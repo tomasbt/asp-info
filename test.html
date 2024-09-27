@@ -28,13 +28,12 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-09-21");
+        nye_tilbud = new Date("2024-10-05");
         month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/83e8e308-ebbe-48a3-b4ba-957f4c548f87.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/f48264b7-1ff4-478e-ba28-4b3e5cea0f40.jpg";
-            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/cf9f2398-6284-4a74-befb-ff6a5486aee9.jpg";
-            images[3] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4348053d-e8a8-4444-9c1c-4bb3686f8349.jpg";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/9450fc9c-1efb-4445-a7e7-8782ff17eb9b.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/fa4b89fa-a963-42f4-af60-600bbefa6eb1.jpg";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/bc68d021-d2b5-45e4-8d55-5b742906e595.jpg";
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -42,36 +41,18 @@
         } 
         
         var images_2 = [], y = -1;
-        halm_kirke = new Date("2024-09-23");
-        if (current_time.getTime() < halm_kirke.getTime()){
-            images_2.push("lokal-info/453704518_1044916956979260_7641458348185109858_n.jpg");
-        }
-        spejder = new Date("2024-09-22");
-        if (current_time.getTime() < spejder.getTime()){
-            images_2.push("lokal-info/Uden titel.jpg");
-        }
         vildtaften = new Date("2024-09-30");
         if (current_time.getTime() < vildtaften.getTime()){
             images_2.push("lokal-info/vildtaften.jpg");
         }
-        Seniorfitness = new Date("2024-09-17");
-        if (current_time.getTime() < Seniorfitness.getTime()){
-            images_2.push("lokal-info/Seniorfitness.png");
-        }
-        Kreativaften = new Date("2024-09-17");
+        Kreativaften = new Date("2024-10-02");
         if (current_time.getTime() < Kreativaften.getTime()){
             images_2.push("lokal-info/Kreativaften.png");
         }
-
-               
-        // images_2[4] = "lokal-info/julefrokost2023.png";
-        // images_2[2] = "lokal-info/Senior fitness.png";
-
-        
-        
-        // images_2[0] = "http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg";
-        // images_2[1] = "http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg";
-        
+        Aktivtirsdag = new Date("2024-10-02");
+        if (current_time.getTime() < Aktivtirsdag.getTime()){
+            images_2.push("lokal-info/Aktivtirsdag.png");
+        }
         
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
