@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("koeb_img").src = images[x];
+            y = (y === images_2.length - 1) ? 0 : y + 1; 
+            document.getElementById("lokale_img").src = images_2[y];
+            z = (z === images_3.length - 1) ? 0 : z + 1; 
+            document.getElementById("sponsor_img").src = images_3[z];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 15000);
+        }
+
+        
+        var images = [], x = -1;
+        images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png";
+       
+        // mdr
+        // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
+        // uge
+        current_time = new Date();
+        nye_tilbud = new Date("2024-10-05");
+        month_tilbud = new Date("2024-09-01");
+        if (current_time.getTime() < nye_tilbud.getTime()){
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/9450fc9c-1efb-4445-a7e7-8782ff17eb9b.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/fa4b89fa-a963-42f4-af60-600bbefa6eb1.jpg";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/bc68d021-d2b5-45e4-8d55-5b742906e595.jpg";
+        }
+
+        if (current_time.getTime() < month_tilbud.getTime()){
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4ad8248d-d834-4a36-a3f9-fb38c032d9dc.jpg");
+        } 
+        
+        var images_2 = [], y = -1;
+        vildtaften = new Date("2024-09-30");
+        if (current_time.getTime() < vildtaften.getTime()){
+            images_2.push("lokal-info/vildtaften.jpg");
+        }
+        Kreativaften = new Date("2024-10-02");
+        if (current_time.getTime() < Kreativaften.getTime()){
+            images_2.push("lokal-info/Kreativaften.png");
+        }
+        Aktivtirsdag = new Date("2024-10-02");
+        if (current_time.getTime() < Aktivtirsdag.getTime()){
+            images_2.push("lokal-info/Aktivtirsdag.png");
+        }
+        
+        var images_3 = [], z = -1;
+        images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
+        images_3[1] = "sponsor/a280002b28bb4c658e6b859f6ac7f517.png";
+        images_3[2] = "sponsor/ce701d839d404919bc469a5eb50247ba.png";
+        images_3[3] = "sponsor/cid f_k3w3xym21.jpg";
+        images_3[4] = "sponsor/f1fddc92ca834a71af96fbea03eb14d7.png";
+        images_3[5] = "sponsor/Untitled.png";
+
+        startTimer();
+
+    </script>   
+
+
+    <script>
+        function updateTime(params) {
+            var dt = new Date();
+            let options_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}; 
+            let options_time = { hour: 'numeric', minute: 'numeric', second: 'numeric'};
+            document.getElementById("tid").innerHTML = dt.toLocaleString("da-DK", options_time);
+            document.getElementById("dato").innerHTML = dt.toLocaleString("da-DK", options_date);
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+    <!-- <meta http-equiv="refresh" content="5">   -->
+</head>
+
+<!-- <style>
+    table, td {text-align: center; border:1px solid black;}
+</style> -->
+<body>
+
+<!-- <div id="tid_dato">
+    <span id="tid"></span>  -  <span id="dato"></span>
+</div> -->
+
+<div id="left-side">
+
+    <div id="købmand-news">
+        <img id="koeb_img" src="https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/3/de5a0704-8a5b-4cdc-8bff-56cd67ce961f.png" style="height: 100%; width: 100%; object-fit: contain">
+    </div>
+
+    <div id="left-bottom">
+        <center><span id="tid"></span>  -  <span id="dato"></span></center>
+        <div id="vejret">
+            
+            <!-- <img src="http://servlet.dmi.dk/byvejr/servlet/byvejr_dag1?by=7600&amp;mode=long" style="height: 100%; width: 100%; object-fit: contain"> -->
+            <!-- <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="original" >ASP Vejr</a> -->
+            <a class="weatherwidget-io" href="https://forecast7.com/da/56d438d51/asp/" data-label_1="ASP" data-label_2="Vejr" data-icons="Climacons Animated" data-days="5" data-theme="pure">ASP Vejr</a>
+        </div>
+        
+        
+        <div id="sponsor">
+            <img id="sponsor_img" src="sponsor/f1fddc92ca834a71af96fbea03eb14d7.png" style="height: 100%; width: 100%; object-fit: contain">
+        </div>
+    </div>
+    
+
+</div>
+
+<div id="lokale-news">
+    <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain">
+</div>
+
+<!-- <hr> -->
+
+</body>
+</html>
+
+ 
