@@ -28,7 +28,7 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-10-05");
+        nye_tilbud = new Date("2024-10-12");
         month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
             images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/a5b13b35-df4b-4fd8-884f-30a0eaed3e40.jpg";
@@ -44,6 +44,11 @@
         julefrokost2024 = new Date("2024-11-17");
         if (current_time.getTime() < julefrokost2024.getTime()){
             images_2.push("lokal-info/julefrokost2024.jpg");
+        }
+
+        vildtaften = new Date("2024-11-09");
+        if (current_time.getTime() < vildtaften.getTime()){
+            images_2.push("lokal-info/vildtaften.jpg");
         }
         
         var images_3 = [], z = -1;
