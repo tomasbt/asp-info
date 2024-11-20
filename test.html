@@ -28,11 +28,12 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2024-11-16");
+        nye_tilbud = new Date("2024-11-23");
         month_tilbud = new Date("2024-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7fb8cea8-4cd2-4abd-9d87-44f19cad0a19.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/d59f83ea-fd7d-4464-8193-03d4cf568117.jpg";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7962f4e9-6e2c-4596-bf8a-a173c0940f6a.png";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/3e62e317-952d-438f-bb13-9ee559d31081.png";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/d80a4542-f9fb-4a15-a903-7f0c0d2c0f5c.png";
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -40,14 +41,14 @@
         } 
         
         var images_2 = [], y = -1;
-        julefrokost2024 = new Date("2024-11-17");
-        if (current_time.getTime() < julefrokost2024.getTime()){
-            images_2.push("lokal-info/julefrokost2024.jpg");
+        juletræstænding2024 = new Date("2024-11-29");
+        if (current_time.getTime() < juletræstænding2024.getTime()){
+            images_2.push("lokal-info/juletræstænding2024.jpg");
         }
 
-        vildtaften = new Date("2024-11-09");
-        if (current_time.getTime() < vildtaften.getTime()){
-            images_2.push("lokal-info/vildtaften.jpg");
+        Julemarked2024 = new Date("2024-12-02");
+        if (current_time.getTime() < Julemarked2024.getTime()){
+            images_2.push("lokal-info/Julemarked2024.jpeg");
         }
         
         var images_3 = [], z = -1;
