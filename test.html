@@ -10,8 +10,8 @@
         function displayNextImage() {
             x = (x === images.length - 1) ? 0 : x + 1;
             document.getElementById("koeb_img").src = images[x];
-            y = (y === images_2.length - 1) ? 0 : y + 1; 
-            document.getElementById("lokale_img").src = images_2[y];
+            // y = (y === images_2.length - 1) ? 0 : y + 1; 
+            // document.getElementById("lokale_img").src = images_2[y];
             z = (z === images_3.length - 1) ? 0 : z + 1; 
             document.getElementById("sponsor_img").src = images_3[z];
         }
@@ -117,7 +117,8 @@
 </div>
 
 <div id="lokale-news">
-    <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain">
+    <iframe src="https://calendar.google.com/calendar/embed?height=595&wkst=2&ctz=Europe%2FCopenhagen&bgcolor=%23ffffff&mode=AGENDA&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&src=djN2amphbnVyMHAxZTM3czBlcWs5MTN0N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border:solid 1px #777" width="630" height="710" frameborder="0" scrolling="no"></iframe>
+    <!-- <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain"> -->
 </div>
 
 <!-- <hr> -->
