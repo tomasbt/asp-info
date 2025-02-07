@@ -28,16 +28,16 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-02-07");
-        month_tilbud = new Date("2025-02-01");
+        nye_tilbud = new Date("2025-02-14");
+        month_tilbud = new Date("2025-03-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/eef2f529-68fc-47ca-9302-6cdabd46a5d0.jpg";
-            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4efe5606-7d62-457e-91a9-7fcde254452d.jpg";
-            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/e486f939-0818-426f-af1e-d5dea0e7819b.jpg";
+            images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/cc8268fe-180f-438f-bae2-46dfd316f291.jpg";
+            images[1] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/b7f091cc-a8c3-4e89-8072-92408b5b42ee.jpg";
+            images[2] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/0190278f-2f5b-4c90-ba80-0839e0d2bee3.jpg";
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c6660a53-8e10-406e-8833-9b424e303601.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/03594664-b7f7-49e1-8b76-837ee2b409ca.jpg");
         } 
 
         if (images.length < 1){
@@ -46,9 +46,9 @@
         }
         
         var images_2 = [], y = -1;
-        Kyndelmisse = new Date("2025-02-03");
-        if (current_time.getTime() < Kyndelmisse.getTime()){
-            images_2.push("lokal-info/Kyndelmisse.png");
+        generalforsamling2025 = new Date("2025-03-07");
+        if (current_time.getTime() < generalforsamling2025.getTime()){
+            images_2.push("lokal-info/generalforsamling2025.jpg");
         }
 
         gymopvisning = new Date("2025-03-09");
