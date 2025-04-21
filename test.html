@@ -10,8 +10,9 @@
         function displayNextImage() {
             x = (x === images.length - 1) ? 0 : x + 1;
             document.getElementById("koeb_img").src = images[x];
-            y = (y === images_2.length - 1) ? 0 : y + 1; 
-            document.getElementById("lokale_img").src = images_2[y];
+            y = (y === div_indhold.length - 1) ? 0 : y + 1; 
+            // document.getElementById("lokale_img").src = images_2[y];
+            lokalenews.innerHTML = div_indhold[y];
             z = (z === images_3.length - 1) ? 0 : z + 1; 
             document.getElementById("sponsor_img").src = images_3[z];
         }
@@ -46,14 +47,17 @@
         }
         
         var images_2 = [], y = -1;
-        affaldsindsamling2025 = new Date("2025-04-06");
-        if (current_time.getTime() < affaldsindsamling2025.getTime()){
-            images_2.push("lokal-info/affaldsindsamling2025.png");
+        var div_indhold = [
+            '<iframe src="https://calendar.google.com/calendar/embed?height=710&wkst=2&ctz=Europe%2FCopenhagen&showPrint=0&mode=AGENDA&title=Aktiviteter%20i%20Langh%C3%B8j&showTz=0&showCalendars=0&showTabs=0&showNav=0&src=ZGVhYTc1Zjg3Y2RmNGMzN2ExNDYzMzk4NjQwODhmODRjMTE1ZjBjZmY5ZDA1YjkwYjRiYTk4YTY1OWRiOGNlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGEuZGFuaXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF&color=%23E67C73" style="border-width:0" width="630" height="710" frameborder="0" scrolling="no"></iframe>'
+        ]
+        husarsteg = new Date("2025-05-16");
+        if (current_time.getTime() < husarsteg.getTime()){
+            // images_2.push("lokal-info/husarsteg.png");
+            div_indhold.push('<img id="lokale_img" src="lokal-info/husarsteg.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
-        AspLindespisersammen = new Date("2025-04-04");
-        if (current_time.getTime() < AspLindespisersammen.getTime()){
-            images_2.push("lokal-info/Asp-Linde-spiser-sammen.jpg");
-        }
+
+        
+
 
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
@@ -120,7 +124,7 @@
 
 </div>
 
-<div id="lokale-news">
+<div id="lokalenews">
     <!-- <iframe src="https://calendar.google.com/calendar/embed?height=595&wkst=2&ctz=Europe%2FCopenhagen&bgcolor=%23ffffff&mode=AGENDA&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&src=djN2amphbnVyMHAxZTM3czBlcWs5MTN0N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border:solid 1px #777" width="630" height="710" frameborder="0" scrolling="no"></iframe> -->
     <iframe src="https://calendar.google.com/calendar/embed?height=710&wkst=2&ctz=Europe%2FCopenhagen&showPrint=0&mode=AGENDA&title=Aktiviteter%20i%20Langh%C3%B8j&showTz=0&showCalendars=0&showTabs=0&showNav=0&src=ZGVhYTc1Zjg3Y2RmNGMzN2ExNDYzMzk4NjQwODhmODRjMTE1ZjBjZmY5ZDA1YjkwYjRiYTk4YTY1OWRiOGNlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGEuZGFuaXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF&color=%23E67C73" style="border-width:0" width="630" height="710" frameborder="0" scrolling="no"></iframe>
     <!-- <img id="lokale_img" src="http://www.struer.dk/media/v0yny5id/lindevej_drone.jpg" style="height: 100%; width: 100%; object-fit: contain"> -->
