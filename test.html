@@ -29,16 +29,16 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-05-02");
-        month_tilbud = new Date("2025-05-01");
+        nye_tilbud = new Date("2025-05-09");
+        month_tilbud = new Date("2025-06-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/e33157ac-25a8-49e3-a688-2051cb663e61.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/a6761ea9-7041-4221-8ff6-b0854e723566.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/24d7c234-906e-428a-b6ec-068d294f394b.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/6f310e1d-3677-4a72-967b-bb5aa41c97f2.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c4eddd31-0738-4697-907e-0867d8f6d39a.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/2fae6f38-7b69-4196-86b1-c5b6ec0c65d5.jpg");
         }
 
         if (current_time.getTime() < month_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/0d6ac6cb-a6d6-4d45-b136-bc42ace6ad3e.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/9ebf0809-c138-41ae-8fff-c936ae896e35.jpg");
         } 
 
         if (images.length < 1){
@@ -54,6 +54,11 @@
         if (current_time.getTime() < husarsteg.getTime()){
             // images_2.push("lokal-info/husarsteg.png");
             div_indhold.push('<img id="lokale_img" src="lokal-info/husarsteg.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+        generalforsamling = new Date("2025-05-13");
+        if (current_time.getTime() < generalforsamling.getTime()){
+            // images_2.push("lokal-info/generalforsamling.png");
+            div_indhold.push('<img id="lokale_img" src="lokal-info/generalforsamling.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
         
