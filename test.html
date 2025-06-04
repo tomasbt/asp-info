@@ -52,6 +52,10 @@
             '<iframe src="https://calendar.google.com/calendar/embed?height=710&wkst=2&ctz=Europe%2FCopenhagen&showPrint=0&mode=AGENDA&title=Aktiviteter%20i%20Langh%C3%B8j&showTz=0&showCalendars=0&showTabs=0&showNav=0&src=ZGVhYTc1Zjg3Y2RmNGMzN2ExNDYzMzk4NjQwODhmODRjMTE1ZjBjZmY5ZDA1YjkwYjRiYTk4YTY1OWRiOGNlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGEuZGFuaXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF&color=%23E67C73" style="border-width:0" width="630" height="710" frameborder="0" scrolling="no"></iframe>'
         ]
 
+        SommerFest25_Program = new Date("2025-06-22");
+        if (current_time.getTime() < SommerFest25_Program.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/SommerFest25_Program.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
         lokaldysten = new Date("2025-06-22");
         if (current_time.getTime() < lokaldysten.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/lokaldysten.png" style="height: 100%; width: 100%; object-fit: contain">');
@@ -60,9 +64,7 @@
         if (current_time.getTime() < pinsevind.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/pinsevind.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
-
     
-        
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
         images_3[1] = "sponsor/a280002b28bb4c658e6b859f6ac7f517.png";
