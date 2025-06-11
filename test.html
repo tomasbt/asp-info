@@ -52,6 +52,10 @@
             '<iframe src="https://calendar.google.com/calendar/embed?height=710&wkst=2&ctz=Europe%2FCopenhagen&showPrint=0&mode=AGENDA&title=Aktiviteter%20i%20Langh%C3%B8j&showTz=0&showCalendars=0&showTabs=0&showNav=0&src=ZGVhYTc1Zjg3Y2RmNGMzN2ExNDYzMzk4NjQwODhmODRjMTE1ZjBjZmY5ZDA1YjkwYjRiYTk4YTY1OWRiOGNlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGEuZGFuaXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF&color=%23E67C73" style="border-width:0" width="630" height="710" frameborder="0" scrolling="no"></iframe>'
         ]
 
+        AAbenSmedje2025 = new Date("2025-06-16");
+        if (current_time.getTime() < AAbenSmedje2025.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/AAbenSmedje2025.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
         SommerFest25_Program = new Date("2025-06-22");
         if (current_time.getTime() < SommerFest25_Program.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/SommerFest25_Program.png" style="height: 100%; width: 100%; object-fit: contain">');
@@ -59,10 +63,6 @@
         lokaldysten = new Date("2025-06-22");
         if (current_time.getTime() < lokaldysten.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/lokaldysten.png" style="height: 100%; width: 100%; object-fit: contain">');
-        }
-        pinsevind = new Date("2025-06-10");
-        if (current_time.getTime() < pinsevind.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/pinsevind.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
     
         var images_3 = [], z = -1;
