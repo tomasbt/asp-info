@@ -29,7 +29,7 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-06-27");
+        nye_tilbud = new Date("2025-07-03");
         month_tilbud = new Date("2025-06-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
             images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/ae9634b2-f61d-42e7-a2e6-f1a72ecdf72e.jpg");
@@ -56,6 +56,13 @@
         if (current_time.getTime() < spejder.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/spejder.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
+
+        faellesspisninglinde = new Date("2025-08-6");
+        if (current_time.getTime() < faellesspisninglinde.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/fællesspisninglinde.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        
     
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
