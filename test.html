@@ -29,12 +29,14 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-08-22");
+        nye_tilbud = new Date("2025-08-29");
         month_tilbud = new Date("2025-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/922c1981-05f3-42ad-a68b-82d457e0f774.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c3b9a71d-0d86-42b6-b8d9-0d7e8d538981.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/a92e7ecc-305e-4ed4-8282-c511c0c4881a.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/46d5afbc-5407-4bd3-9f06-34434f7b0eaf.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/b172ec53-f86f-4618-a4da-6291766c1bbb.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/5b55ed4f-5095-4fdf-b58b-9064b6490f80.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/5ebc51f8-a2b0-4cf5-bc59-fc210b1533be.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c3a81085-7889-411b-8a32-7d9927f05ce4.jpg");
         }
         
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -56,12 +58,16 @@
             div_indhold.push('<img id="lokale_img" src="lokal-info/spejder.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        faellesspisninglinde = new Date("2025-08-6");
-        if (current_time.getTime() < faellesspisninglinde.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/fællesspisninglinde.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        teenklub = new Date("2025-10-01");
+        if (current_time.getTime() < teenklub.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/teenklub.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        
+        gymnastik = new Date("2025-10-01");
+        if (current_time.getTime() < gymnastik.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/gymnastik.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
     
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
