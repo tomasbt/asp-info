@@ -29,13 +29,14 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-09-05");
+        nye_tilbud = new Date("2025-09-19");
         month_tilbud = new Date("2025-09-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/b766f11e-f5d6-4942-b228-ad6fe4c1c6f7.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/67ed9b59-542f-442f-be13-a5578487dc3b.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/49c1496c-1e2b-4d51-9151-c12aea8c3edf.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/8fc7f6a3-a2b1-49bb-81ec-11e7a2c9b740.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/669d33dc-1a91-40a7-be4a-9b6d2353ec97.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7a7bf92b-6c5a-4e25-9306-d1623b47793b.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/14a33f97-b2f9-4be7-9bb8-9653d75566eb.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/e263fb69-def6-4e0a-be98-c849d7aa7184.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/00b30a16-b2cc-42f4-8270-6b507e0062d0.jpg");
         }
         
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -67,6 +68,16 @@
             div_indhold.push('<img id="lokale_img" src="lokal-info/gymnastik.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
+        struerenergi = new Date("2025-09-19");
+        if (current_time.getTime() < struerenergi.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/struerenergi.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        minsidstevilje = new Date("2025-09-26");
+        if (current_time.getTime() < minsidstevilje.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/minsidstevilje.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+        
     
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
