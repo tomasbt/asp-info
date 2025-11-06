@@ -61,7 +61,15 @@
         if (current_time.getTime() < julestueopslag.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/20251102_julestue opslag.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
-   
+
+        vælgermøde = new Date("2025-11-13");
+        if (current_time.getTime() < vælgermøde.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/vælgermøde.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        
+
+        
         var images_3 = [], z = -1;
         images_3[0] = "sponsor/1a00ffd1daf640cfb009649fe4f73962.png";
         images_3[1] = "sponsor/a280002b28bb4c658e6b859f6ac7f517.png";
