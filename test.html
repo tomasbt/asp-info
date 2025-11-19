@@ -62,9 +62,14 @@
             div_indhold.push('<img id="lokale_img" src="lokal-info/20251102_julestue opslag.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        vælgermøde = new Date("2025-11-13");
-        if (current_time.getTime() < vælgermøde.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/vælgermøde.png" style="height: 100%; width: 100%; object-fit: contain">');
+        Julemarked2025 = new Date("2025-12-01");
+        if (current_time.getTime() < Julemarked2025.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/Julemarked2025.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        juletræstænding2025 = new Date("2025-11-28");
+        if (current_time.getTime() < juletræstænding2025.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/juletræstænding2025.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
         
