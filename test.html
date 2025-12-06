@@ -29,17 +29,17 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-11-07");
-        month_tilbud = new Date("2025-12-01");
+        nye_tilbud = new Date("2025-12-12");
+        month_tilbud = new Date("2026-01-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/4344d34d-c965-4e0d-ba41-579267ccf992.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/ab752787-94dc-483b-aa15-b0755b2ac644.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2081cfc-90b8-43a9-81f9-3677886c0288.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/924013f9-2a0a-441b-8e54-10211455173f.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/545dd5f2-12bd-4111-8bb7-ab4cbaccdfda.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/bb8cfade-9c16-4552-ac50-3a1bac14f769.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7aa30124-6917-462f-a800-9cfd3557e9fa.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/882337e4-93ab-4036-8598-4bc6960c3073.jpg");
         }
         
         if (current_time.getTime() < month_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/5125872d-486f-44dc-a929-d8980512a13a.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/318d52eb-4ee3-49c1-98f6-6c13568d585c.jpg");
         } 
 
         if (images.length < 1){
@@ -52,25 +52,17 @@
             '<iframe src="https://calendar.google.com/calendar/embed?height=710&wkst=2&ctz=Europe%2FCopenhagen&showPrint=0&mode=AGENDA&title=Aktiviteter%20i%20Langh%C3%B8j&showTz=0&showCalendars=0&showTabs=0&showNav=0&src=ZGVhYTc1Zjg3Y2RmNGMzN2ExNDYzMzk4NjQwODhmODRjMTE1ZjBjZmY5ZDA1YjkwYjRiYTk4YTY1OWRiOGNlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGEuZGFuaXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF&color=%23E67C73" style="border-width:0" width="630" height="710" frameborder="0" scrolling="no"></iframe>'
         ]
 
-        a1000013384png = new Date("2025-12-05");
-        if (current_time.getTime() < a1000013384png.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/1000013384.png" style="height: 100%; width: 100%; object-fit: contain">');
+        Mediernesmagtkirke = new Date("2026-03-05");
+        if (current_time.getTime() < Mediernesmagtkirke.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/Mediernesmagtkirke.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        julestueopslag = new Date("2025-12-01");
-        if (current_time.getTime() < julestueopslag.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/20251102_julestue opslag.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        Gudstjenesterrykket = new Date("2025-12-31");
+        if (current_time.getTime() < Gudstjenesterrykket.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/Gudstjenester rykket.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        Julemarked2025 = new Date("2025-12-01");
-        if (current_time.getTime() < Julemarked2025.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/Julemarked2025.png" style="height: 100%; width: 100%; object-fit: contain">');
-        }
-
-        juletræstænding2025 = new Date("2025-11-28");
-        if (current_time.getTime() < juletræstænding2025.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/juletræstænding2025.png" style="height: 100%; width: 100%; object-fit: contain">');
-        }
+        
 
         
 
