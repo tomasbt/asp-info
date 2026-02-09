@@ -57,9 +57,14 @@
             div_indhold.push('<img id="lokale_img" src="lokal-info/Mediernesmagtkirke.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        Gudstjenesterrykket = new Date("2025-12-31");
-        if (current_time.getTime() < Gudstjenesterrykket.getTime()){
-            div_indhold.push('<img id="lokale_img" src="lokal-info/Gudstjenester rykket.png" style="height: 100%; width: 100%; object-fit: contain">');
+        gymnastikopvisning = new Date("2026-03-15");
+        if (current_time.getTime() < gymnastikopvisning.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/gymopvisning.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        lindeboldklubfodboldskole = new Date("2026-06-29");
+        if (current_time.getTime() < lindeboldklubfodboldskole.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/lindeboldklubfodboldskole.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
         
