@@ -29,13 +29,10 @@
         // images[0] = "https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c2cf3f68-363c-49a5-9930-701ce51249fa.jpg";
         // uge
         current_time = new Date();
-        nye_tilbud = new Date("2025-12-12");
+        nye_tilbud = new Date("2026-03-06");
         month_tilbud = new Date("2026-03-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/545dd5f2-12bd-4111-8bb7-ab4cbaccdfda.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/bb8cfade-9c16-4552-ac50-3a1bac14f769.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/7aa30124-6917-462f-a800-9cfd3557e9fa.jpg");
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/882337e4-93ab-4036-8598-4bc6960c3073.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/821bd831-92a3-4d45-9b1f-5f979598d25f.jpg");
         }
         
         if (current_time.getTime() < month_tilbud.getTime()){
@@ -67,8 +64,8 @@
             div_indhold.push('<img id="lokale_img" src="lokal-info/lindeboldklubfodboldskole.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
 
-        Generalforsamling2026plakat.png = new Date("2026-03-04");
-        if (current_time.getTime() < Generalforsamling2026plakat.png.getTime()){
+        Generalforsamling2026plakat = new Date("2026-03-04");
+        if (current_time.getTime() < Generalforsamling2026plakat.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/Generalforsamling 2026 plakat.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
         
