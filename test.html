@@ -68,6 +68,16 @@
         if (current_time.getTime() < Generalforsamling2026plakat.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/Generalforsamling 2026 plakat.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
+
+        indsamling = new Date("2026-03-09");
+        if (current_time.getTime() < indsamling.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/indsamling.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        indsamling2 = new Date("2026-03-09");
+        if (current_time.getTime() < indsamling2.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/Flyerhøjkant.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
         
 
         
