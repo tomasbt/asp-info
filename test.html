@@ -30,13 +30,13 @@
         // uge
         current_time = new Date();
         nye_tilbud = new Date("2026-03-06");
-        month_tilbud = new Date("2026-03-01");
+        month_tilbud = new Date("2026-04-01");
         if (current_time.getTime() < nye_tilbud.getTime()){
             images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/821bd831-92a3-4d45-9b1f-5f979598d25f.jpg");
         }
         
         if (current_time.getTime() < month_tilbud.getTime()){
-            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/bf804be5-b060-4a6c-bfc5-3294a43fcd72.jpg");
+            images.push("https://image.mail.minkobmand.dk/lib/fe9b13727665017c74/m/1/c231aa56-5ed3-4f5a-b632-d882fcab7537.jpg");
         } 
 
         if (images.length < 1){
@@ -77,6 +77,11 @@
         indsamling2 = new Date("2026-03-09");
         if (current_time.getTime() < indsamling2.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/Flyerhøjkant.jpg" style="height: 100%; width: 100%; object-fit: contain">');
+        }
+
+        kanin = new Date("2026-03-22");
+        if (current_time.getTime() < kanin.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/kaninudstilling.jpg" style="height: 100%; width: 100%; object-fit: contain">');
         }
         
 
