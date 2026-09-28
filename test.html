@@ -78,6 +78,11 @@
         if (current_time.getTime() < spejderlivet.getTime()){
             div_indhold.push('<img id="lokale_img" src="lokal-info/spejderlivet.png" style="height: 100%; width: 100%; object-fit: contain">');
         }
+
+        Aktivtirsdag = new Date("2026-10-07");
+        if (current_time.getTime() < Aktivtirsdag.getTime()){
+            div_indhold.push('<img id="lokale_img" src="lokal-info/Aktiv-tirsdag.png" style="height: 100%; width: 100%; object-fit: contain">');
+        }
         
 
         
